@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:infinite_scroll/controller/resource/resource_controller.dart';
+import 'package:infinite_scroll/controller/user/user_controller.dart';
+import 'package:infinite_scroll/widget/resource/view/resource_get_view.dart';
 import 'package:infinite_scroll/widget/resource/view/resource_view.dart';
+import 'package:infinite_scroll/widget/user/view/user_get_view.dart';
 import 'package:infinite_scroll/widget/user/view/user_view.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -13,12 +18,21 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   @override
+  void initState() {
+    super.initState();
+    Get.put(UserController());
+    Get.put(ResourceController());
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body: <Widget>[
-        const UserView(),
-        const ResourceView(),
+        // const UserView(),
+        // const ResourceView(),
+        const UserGetView(),
+        const ResourceGetView(),
       ][_currentIndex],
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {

@@ -38,6 +38,7 @@ dependencies:
   retrofit:
   dio:
   logger:
+  get:
   analyzer: ^5.2.0
 
 dev_dependencies:

@@ -12,7 +12,7 @@ abstract class PaginationNotifier<T> extends AsyncNotifier<Pagination<T>> {
   FutureOr<Pagination<T>> build() {
     state = AsyncLoading<Pagination<T>>();
     _repository = initRepository();
-    return fetchData().then((_) => state.value ?? const Pagination());
+    return fetchData().then((_) => state.value ?? Pagination<T>());
   }
 
   IBasePaginationRepository<T> initRepository();

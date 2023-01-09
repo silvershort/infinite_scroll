@@ -155,7 +155,7 @@ class __$$_PaginationCopyWithImpl<T, $Res>
 /// @nodoc
 @JsonSerializable(genericArgumentFactories: true)
 class _$_Pagination<T> implements _Pagination<T> {
-  const _$_Pagination(
+  _$_Pagination(
       {this.page = 1,
       @JsonKey(name: 'per_page') this.perPage = 10,
       this.total = 0,
@@ -224,7 +224,7 @@ class _$_Pagination<T> implements _Pagination<T> {
 }
 
 abstract class _Pagination<T> implements Pagination<T> {
-  const factory _Pagination(
+  factory _Pagination(
       {final int page,
       @JsonKey(name: 'per_page') final int perPage,
       final int total,

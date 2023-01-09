@@ -8,7 +8,7 @@ part 'pagination.freezed.dart';
 
 @Freezed(genericArgumentFactories: true)
 class Pagination<T> with _$Pagination<T> {
-  const factory Pagination({
+  factory Pagination({
     @Default(1)
     int page,
     @JsonKey(name: 'per_page')

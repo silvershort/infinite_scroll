@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:infinite_scroll/widget_main/page/my_home_page.dart';
+import 'package:infinite_scroll/ui/dashboard/page/my_home_page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:infinite_scroll/model/common/pagination.dart';
 import 'package:infinite_scroll/provider/common/pagination_provider.dart';
-
-import '../component/load_more_bottom_widget.dart';
+import 'package:infinite_scroll/ui_component/load_more_bottom_widget.dart';
 
 class BasePaginationView<T> extends ConsumerWidget {
   const BasePaginationView({

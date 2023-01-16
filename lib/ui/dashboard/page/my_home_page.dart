@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:infinite_scroll/controller/resource/resource_controller.dart';
 import 'package:infinite_scroll/controller/user/user_controller.dart';
-import 'package:infinite_scroll/widget/resource/view/resource_get_view.dart';
-import 'package:infinite_scroll/widget/resource/view/resource_view.dart';
-import 'package:infinite_scroll/widget/user/view/user_get_view.dart';
-import 'package:infinite_scroll/widget/user/view/user_view.dart';
+import 'package:infinite_scroll/ui/resource/view/resource_get_view.dart';
+import 'package:infinite_scroll/ui/user/view/user_get_view.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);

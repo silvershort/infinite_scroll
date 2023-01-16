@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:infinite_scroll/controller/common/pagination_controller.dart';
-import 'package:infinite_scroll/widget_common/component/load_more_bottom_get_widget.dart';
+import 'package:infinite_scroll/ui_component/load_more_bottom_get_widget.dart';
 
 class BasePaginationGetView<E, T extends PaginationController> extends GetView<T> {
   const BasePaginationGetView({

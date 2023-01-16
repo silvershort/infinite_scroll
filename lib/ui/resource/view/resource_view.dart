@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:infinite_scroll/provider/resource/resource_provider.dart';
-import 'package:infinite_scroll/widget/resource/component/resource_tile.dart';
-import 'package:infinite_scroll/widget_common/view/base_pagination_view.dart';
-
+import 'package:infinite_scroll/ui/dashboard/view/base_pagination_view.dart';
+import 'package:infinite_scroll/ui/resource/widget/resource_tile.dart';
 
 class ResourceView extends StatelessWidget {
   const ResourceView({Key? key}) : super(key: key);
